@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+
+target :XXL do
+  pod "CocoaLumberjack"
+  pod "NSLogger"
+end
+

@@ -8,6 +8,19 @@
 
 import SpriteKit
 
-class AnimalNode: SKNode {
-
+class AnimalNode: SKSpriteNode {
+    var _selected: Bool = false;
+    var rowIndex: Int = 0;
+    var colIndex: Int = 0;
+    
+    var selected: Bool{
+        get {
+            return _selected;
+        }
+        
+        set {
+            _selected = newValue;
+        }
+    }
+    
 }

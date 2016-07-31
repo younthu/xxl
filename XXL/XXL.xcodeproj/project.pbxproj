@@ -22,6 +22,8 @@
 		4F24526A1D46E7A1004773F0 /* GameBoardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2452691D46E7A1004773F0 /* GameBoardScene.swift */; };
 		4F24526C1D46E917004773F0 /* CellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F24526B1D46E917004773F0 /* CellNode.swift */; };
 		4F24526E1D46E929004773F0 /* AnimalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F24526D1D46E929004773F0 /* AnimalNode.swift */; };
+		4F9708981D4DF036001F19EE /* XLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9708971D4DF036001F19EE /* XLogger.m */; };
+		56033C6AC455CC4092303BED /* libPods-XXL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8206B77ED9866AE423E0E03 /* libPods-XXL.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AE2BBF09B18170C75E9D2EC /* Pods-XXL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXL/Pods-XXL.debug.xcconfig"; sourceTree = "<group>"; };
 		4F24522A1D46E59D004773F0 /* XXL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F24522D1D46E59D004773F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F24522F1D46E59D004773F0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -63,6 +66,11 @@
 		4F2452691D46E7A1004773F0 /* GameBoardScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameBoardScene.swift; path = Scenes/GameBoardScene.swift; sourceTree = "<group>"; };
 		4F24526B1D46E917004773F0 /* CellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellNode.swift; path = SKNodes/CellNode.swift; sourceTree = "<group>"; };
 		4F24526D1D46E929004773F0 /* AnimalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimalNode.swift; path = SKNodes/AnimalNode.swift; sourceTree = "<group>"; };
+		4F9708951D4DF036001F19EE /* XXL-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XXL-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F9708961D4DF036001F19EE /* XLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLogger.h; path = Helpers/XLogger.h; sourceTree = "<group>"; };
+		4F9708971D4DF036001F19EE /* XLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLogger.m; path = Helpers/XLogger.m; sourceTree = "<group>"; };
+		54F4C3A607FD4BC281F885EF /* Pods-XXL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXL.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXL/Pods-XXL.release.xcconfig"; sourceTree = "<group>"; };
+		C8206B77ED9866AE423E0E03 /* libPods-XXL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XXL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56033C6AC455CC4092303BED /* libPods-XXL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052DA0F8C7BAF1D6D478FF73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AE2BBF09B18170C75E9D2EC /* Pods-XXL.debug.xcconfig */,
+				54F4C3A607FD4BC281F885EF /* Pods-XXL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		23FE5506944155E3EACEB898 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8206B77ED9866AE423E0E03 /* libPods-XXL.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F2452211D46E59D004773F0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +123,8 @@
 				4F2452451D46E59D004773F0 /* XXLTests */,
 				4F2452501D46E59D004773F0 /* XXLUITests */,
 				4F24522B1D46E59D004773F0 /* Products */,
+				052DA0F8C7BAF1D6D478FF73 /* Pods */,
+				23FE5506944155E3EACEB898 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +141,7 @@
 		4F24522C1D46E59D004773F0 /* XXL */ = {
 			isa = PBXGroup;
 			children = (
+				4F9708941D4DF010001F19EE /* Helpers */,
 				4F2452671D46E70F004773F0 /* Scenes */,
 				4F2452661D46E6DD004773F0 /* Views */,
 				4F2452611D46E654004773F0 /* Models */,
@@ -173,6 +202,16 @@
 			name = Scenes;
 			sourceTree = "<group>";
 		};
+		4F9708941D4DF010001F19EE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4F9708961D4DF036001F19EE /* XLogger.h */,
+				4F9708971D4DF036001F19EE /* XLogger.m */,
+				4F9708951D4DF036001F19EE /* XXL-Bridging-Header.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F2452561D46E59D004773F0 /* Build configuration list for PBXNativeTarget "XXL" */;
 			buildPhases = (
+				A619DD86E445AFE5CFBB283D /* [CP] Check Pods Manifest.lock */,
 				4F2452261D46E59D004773F0 /* Sources */,
 				4F2452271D46E59D004773F0 /* Frameworks */,
 				4F2452281D46E59D004773F0 /* Resources */,
+				2557655687C1C55F308F1C4C /* [CP] Embed Pods Frameworks */,
+				849D95D644E66547895B45D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,6 +342,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2557655687C1C55F308F1C4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXL/Pods-XXL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		849D95D644E66547895B45D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXL/Pods-XXL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A619DD86E445AFE5CFBB283D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F2452261D46E59D004773F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -314,6 +404,7 @@
 				4F24526E1D46E929004773F0 /* AnimalNode.swift in Sources */,
 				4F2452651D46E6D6004773F0 /* Animal.swift in Sources */,
 				4F24526C1D46E917004773F0 /* CellNode.swift in Sources */,
+				4F9708981D4DF036001F19EE /* XLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,23 +546,30 @@
 		};
 		4F2452571D46E59D004773F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE2BBF09B18170C75E9D2EC /* Pods-XXL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = XXL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Fool-Dragon.XXL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XXL/XXL-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4F2452581D46E59D004773F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F4C3A607FD4BC281F885EF /* Pods-XXL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = XXL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Fool-Dragon.XXL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XXL/XXL-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -542,6 +640,7 @@
 				4F2452581D46E59D004773F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F2452591D46E59D004773F0 /* Build configuration list for PBXNativeTarget "XXLTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +649,7 @@
 				4F24525B1D46E59D004773F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F24525C1D46E59D004773F0 /* Build configuration list for PBXNativeTarget "XXLUITests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +658,7 @@
 				4F24525E1D46E59D004773F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
