@@ -120,7 +120,6 @@ class GameBoardScene: SKScene {
                 animal.rowIndex = Int(row);
                 animal.colIndex = Int(col);
                 
-                markNodeWithLabel(animal, label: String(format: "%d, %d", row, col));
                 self.addChild(animal)
                 
                 animals.append(animal);
